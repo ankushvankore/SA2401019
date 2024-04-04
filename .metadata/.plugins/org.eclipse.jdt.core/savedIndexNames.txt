@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+D:\StarAgile\Demos\SA2401019\.metadata\.plugins\org.eclipse.jdt.core
+3001246164.index
+2573847958.index
+1865797976.index
+1587205500.index
