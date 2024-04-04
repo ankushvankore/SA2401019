@@ -13,6 +13,8 @@ public class D12LocateByXPath_Absolute {
 		driver.get("https://www.facebook.com/");
 		
 		driver.findElement(By.xpath("html/body/div/div/div/div/div/div/div[2]/div/div/form/div/div/input")).sendKeys("test@gmail.com");
+		driver.findElement(By.xpath("html/body/div/div/div/div/div/div/div[2]/div/div/form/div/div[2]/div/input")).sendKeys("12345");
+		driver.findElement(By.xpath("html/body/div/div/div/div/div/div/div[2]/div/div/form/div[2]/button")).click();
 	}
 
 }

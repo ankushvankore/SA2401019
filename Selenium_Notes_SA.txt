@@ -1,0 +1,123 @@
+Selenium is suite / bundle of test automation tools
+
+Components
+
+1. IDE
+2. Grid
+3. RC
+4. WebDriver
+
+
+WebDriver
+
+- Is test automation tool to test Web Based Application / Appliation that works on browser(Web Sites)
+- It is an interface of Java
+- It is an API
+
+Pre-Requisite for WebDriver
+
+1. Windows 10
+2. Updated Browser
+3. Any editor
+	- Eclipse (Neon on-words)
+4. Java (Minimum 11)
+5. Selenium .jar File
+
+
+Create 2 folders
+
+1. YourName_Selenium_Demos
+2. Selenium Jar Files
+
+==========================================
+Selenium Configuration
+==========================================
+Right Click on Project -> Build Path -> Configure Build Path -> Libraries -> Click on ClassPath -> Add External Jars -> Select the downloaded Selenium Server jar file -> Open -> Apply and Close
+
+
+
+===========================================================
+Selenium WebDriver Notes
+===========================================================
+1. Open Browser => Create object of WebDriver interface
+2. get() => Open a url
+3. driver.manage().window().maximize() => This method will maximize the browser window
+4. close() => Close the browser window which is opened by WebDriver object.
+5. getTitle() => Returns title of the Web Page (String)
+6. getCurrentUrl() => Returns the url of Web Page (String)
+7. getPageSource() => 
+8. findElement() => Read / Find the control on the web page. IT LOCATES FIRST OCCURANCE (WebElement)
+9. findElements() => Read / finds multipl controls on the page (List<WebElement>)
+
+==========================================================
+Locators
+==========================================================
+Used to locate / read any control / Web Elements / Web Controls on the web page
+
+1. Name 
+2. Id
+3. ClassName
+4. CssSelector
+	a. Using Attribute
+		tagName[attribute="value"][attrubute2="value']
+		input[data-testid="royal_email"]
+	b. Using Special Characters
+		i. ^ => Starts With
+			tagName[attribute$="value"]
+		ii. $ => Ends With
+		iii. * => Contains
+5. XPath
+	
+6. LinkText
+7. PartialLinkText
+8. TagName
+9. RelativeLocator
+
+===========================================
+WebElement Methods
+===========================================
+1. sendKeys() => Used to enter some text in the textbox
+2. click() => Used to click on the control
+3. getText() => Used to return the text on the control (String)
+4. isSelected() => Used to check whether the control (Radio Button or check box) is selected or not
+
+
+=============================
+Exceptions in Selenium
+=============================
+1. InvalidArgumentException => URL is not in the correct format
+2. NoSuchElementException => 
+	a. Element is not presnt on the page
+	b. The value of locator is wrong
+
+
+
+
+
+
+
+
+===========================
+XPath
+===========================
+XML Path
+1. Absolute XPath
+Pattankodoli Bus Stand -> Take Right Turn -> Water Tank -> Hupare Nagar 9th Lane -> Ankush's Home
+html
+
+2. Relative XPath
+
+
+
+
+
+
+
+<tag attribute="value">Inner Text</tag>
+
+
+
+
+
+
+
