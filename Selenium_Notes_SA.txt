@@ -79,8 +79,8 @@ WebElement Methods
 1. sendKeys() => Used to enter some text in the textbox
 2. click() => Used to click on the control
 3. getText() => Used to return the text on the control (String)
-4. isSelected() => Used to check whether the control (Radio Button or check box) is selected or not
-
+4. isSelected() => Used to check whether the control (Radio Button or check box) is selected or not (Boolean)
+5. getAttribute() => Returns the value of any attribute of the WebElement
 
 =============================
 Exceptions in Selenium
@@ -114,6 +114,68 @@ html
 
 
 <tag attribute="value">Inner Text</tag>
+
+
+
+===================================
+Handling Dropdown list
+===================================
+1. Display selected country
+2. Display total no of countries
+3. Display list of all the countries
+4. Select Spain from the list
+5. Display selected country
+
+Select class => Used to handle drop down list. (The control should have select tag)
+
+Methods:
+1. getFirstSelectedOption() => Return selected option from drplist (WebElement)
+2. getOptions() => Returns list of all the elements in drop down list (List<WebElement>)
+3. selectByVisibleText() =>
+4. selectByValue() => 
+5. selectByIndex() => 
+
+
+================================
+Synchronization
+================================
+Process of adjusting speed of tool with speed of application
+
+1. Thread.Sleep()
+2. ImplicitWait
+3. ExplicitWait
+4. FluentWait
+5. PageLoadTimeout
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

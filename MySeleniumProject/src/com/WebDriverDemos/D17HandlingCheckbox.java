@@ -20,7 +20,10 @@ public class D17HandlingCheckbox {
 		System.out.println("Visible : " + altMail.isDisplayed());
 		System.out.println("Enabled : " + altMail.isEnabled());
 		
-		if(altMail.isSelected() == false)
+		//if(altMail.isSelected() == false)
+			//altMail.click();
+		
+		if(!altMail.isSelected())
 			altMail.click();
 		
 		System.out.println("After Clicking...");

@@ -14,6 +14,8 @@ public class D16LocateByRelativeLocator {
 		driver.get("https://www.facebook.com/");
 		
 		driver.findElement(RelativeLocator.with(By.tagName("input")).above(By.id("pass"))).sendKeys("ankushvankore@gmail.com");
+		
+		driver.findElement(RelativeLocator.with(By.tagName("button")).above(By.linkText("Forgotten password?"))).click();
 	}
 
 }
