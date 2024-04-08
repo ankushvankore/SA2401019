@@ -15,7 +15,8 @@ public class A02EchoEcho_CheckBox {
 		
 		driver.get("https://echoecho.com/htmlforms09.htm");
 		
-		List<WebElement>products = driver.findElements(By.xpath("/html/body/div[2]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div/span/form/table[3]/tbody/tr/td/table/tbody/tr/td/input"));
+		//List<WebElement>products = driver.findElements(By.xpath("/html/body/div[2]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div/span/form/table[3]/tbody/tr/td/table/tbody/tr/td/input"));
+		List<WebElement>products = driver.findElements(By.cssSelector("input[name^=\"option\"]"));
 		
 		for(WebElement p : products)
 		{

@@ -16,8 +16,9 @@ public class D19HandlingDropdownList {
 		
 		driver.get("https://register.rediff.com/register/register.php?FormName=user_details");
 		
-		WebElement drpList = driver.findElement(By.id("country"));
-		Select countries = new Select(drpList);
+		//WebElement drpList = driver.findElement(By.id("country"));
+		//Select countries = new Select(drpList);
+		Select countries = new Select(driver.findElement(By.id("country")));
 		
 		System.out.println("Selected Country: " + countries.getFirstSelectedOption().getText());
 		

@@ -48,6 +48,7 @@ Selenium WebDriver Notes
 7. getPageSource() => 
 8. findElement() => Read / Find the control on the web page. IT LOCATES FIRST OCCURANCE (WebElement)
 9. findElements() => Read / finds multipl controls on the page (List<WebElement>)
+10. 
 
 ==========================================================
 Locators
@@ -80,7 +81,7 @@ WebElement Methods
 2. click() => Used to click on the control
 3. getText() => Used to return the text on the control (String)
 4. isSelected() => Used to check whether the control (Radio Button or check box) is selected or not (Boolean)
-5. getAttribute() => Returns the value of any attribute of the WebElement
+5. getAttribute() => Returns the value of any attribute of the WebElement (String)
 
 =============================
 Exceptions in Selenium
@@ -89,6 +90,9 @@ Exceptions in Selenium
 2. NoSuchElementException => 
 	a. Element is not presnt on the page
 	b. The value of locator is wrong
+	c. Synchronization Issue
+3. TimeOutException => If the specific URL is not geting loaded in 30 Seconds
+
 
 
 
@@ -142,12 +146,41 @@ Synchronization
 Process of adjusting speed of tool with speed of application
 
 1. Thread.Sleep()
-2. ImplicitWait
-3. ExplicitWait
+	a. It is taking mandatory delay
+	b. It is applicable to Single statement only
+2. ImplicitWait (implicitlyWait)
+	a. It dosent take mandatory delay
+	b. It is applicable throughout the script
+3. ExplicitWait (WebDriverWait)
+	a. It dosent take mandatory delay
+	b. It is applicable to Single statement only
 4. FluentWait
+	a. It dosent take mandatory delay
+	b. It is applicable to Single statement only
+	c. It can handle a specific type of exception
+	
+	w - withTimeout
+	i - ignoring
+	p - pollingEvery
+	u - until
+
 5. PageLoadTimeout
 
 
+===============================
+Assignments
+===============================
+1. DemoQA Registration From
+2. ExplicitWait & Fluent Wait on RedBus.com
+3. https://dash.bling-center.com/platform/signIn.html
+4. Table on rediff.com
+
+=============================
+Handling Table
+=============================
+1. Display all column headers
+2. Display total no of rows
+3. Display any row randomly
 
 
 
