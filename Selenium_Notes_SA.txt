@@ -48,7 +48,8 @@ Selenium WebDriver Notes
 7. getPageSource() => 
 8. findElement() => Read / Find the control on the web page. IT LOCATES FIRST OCCURANCE (WebElement)
 9. findElements() => Read / finds multipl controls on the page (List<WebElement>)
-10. 
+10. getWindowHandles() => Return id / name of windows those have been opened by WebDriver object (Set<String>)
+11. quit() => Closes all the windows those are opened by current WebDriver object
 
 ==========================================================
 Locators
@@ -92,7 +93,7 @@ Exceptions in Selenium
 	b. The value of locator is wrong
 	c. Synchronization Issue
 3. TimeOutException => If the specific URL is not geting loaded in 30 Seconds
-
+4. NoAlertPresentException => Such alert is not present on the page
 
 
 
@@ -173,7 +174,7 @@ Assignments
 1. DemoQA Registration From
 2. ExplicitWait & Fluent Wait on RedBus.com
 3. https://dash.bling-center.com/platform/signIn.html
-4. Table on rediff.com
+4. Display list of all the company name
 
 =============================
 Handling Table
@@ -183,17 +184,30 @@ Handling Table
 3. Display any row randomly
 
 
+=============================
+Handling Alert
+=============================
+If you are not able to inspect Ok or Cancel button, then only it is an ALERT
 
+Alert Interface is used to handle alert in Selenium.
 
+Methods
+1. getTest() => Return the text on Alert (String)
+2. accept() => Click on Ok button / Hit Enter
+3. dismiss() => Click on Cancel button / Hit Escape key
+4. sendKeys() => Will enter some text on Alert (Prompt Box)
 
+============================
+Mouse Actions
+============================
+1. Left Click
+2. Right Click
+3. Double Click
+4. Drag and Drop
+5. Drag
+6. Hover
 
-
-
-
-
-
-
-
+Actions Class => Used to handle above mouse actions
 
 
 
