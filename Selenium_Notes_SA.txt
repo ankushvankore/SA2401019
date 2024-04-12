@@ -92,6 +92,7 @@ Exceptions in Selenium
 	a. Element is not presnt on the page
 	b. The value of locator is wrong
 	c. Synchronization Issue
+
 3. TimeOutException => If the specific URL is not geting loaded in 30 Seconds
 4. NoAlertPresentException => Such alert is not present on the page
 
@@ -208,6 +209,65 @@ Mouse Actions
 6. Hover
 
 Actions Class => Used to handle above mouse actions
+
+Methods
+
+1. moveToElement()
+2. doubleClick()
+3. contextClick()
+4. dragAndDrop()
+
+WebElement.getScreenshotAs(OutputType.FILE);
+
+=========================================================================================
+TestNG
+=========================================================================================
+Testing Framework => Set of rules, code, classes, interfaces to reduce you script
+
+NG => Next Generation
+
+Features
+1. Use annotations
+2. Get a report
+	a. Normal Report
+	b. HTML Report
+3. Reduce your script
+4. Implementation of multiple frameworks
+	a. Liner framework
+	b. Modular framework
+	c. Keyword driven framework
+	d. Page Object Model
+	e. Data Driven Framework
+5. Implement Data Driven Testing
+6. Prioritarization of test cases
+7. Skip / Execute single / multiple tests
+
+=======================
+Annotations in TestNG
+=======================
+1. @Test => Only this method is treated as Test Case
+2. @BeforeTest => This is the method that executes ONLY ONCE BEFORE EXECUTING 1ST TEST CASE
+3. @AfterTest => This is the method that executes ONLY ONCE AFTER EXECUTING LAST TEST CASE
+4. @BeforeMethod => This is the method that executed BEFORE EVERY TEST CASE
+4. @AfterMethod => This is the method that executed AFTER EVERY TEST CASE
+
+
+BeforeTest
+	BeforeMethod
+		Test 1
+	AfterMethod
+	BeforeMethod
+		Test 2
+	AfterMethod
+	BeforeMethod
+		Test 3
+	AfterMethod
+	BeforeMethod
+		Test 4
+	AfterMethod
+AfterTest
+
+
 
 
 

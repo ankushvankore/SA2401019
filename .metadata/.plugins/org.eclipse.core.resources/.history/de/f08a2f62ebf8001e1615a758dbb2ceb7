@@ -1,0 +1,9 @@
+package com.TestNGDemos;
+
+import org.testng.annotations.Test;
+
+public class D03Before_After_Test {
+  @Test
+  public void f() {
+  }
+}
