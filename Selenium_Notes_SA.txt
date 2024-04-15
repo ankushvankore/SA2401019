@@ -241,6 +241,7 @@ Features
 5. Implement Data Driven Testing
 6. Prioritarization of test cases
 7. Skip / Execute single / multiple tests
+8. Execute / Skip tests in groups
 
 =======================
 Annotations in TestNG
@@ -249,7 +250,9 @@ Annotations in TestNG
 2. @BeforeTest => This is the method that executes ONLY ONCE BEFORE EXECUTING 1ST TEST CASE
 3. @AfterTest => This is the method that executes ONLY ONCE AFTER EXECUTING LAST TEST CASE
 4. @BeforeMethod => This is the method that executed BEFORE EVERY TEST CASE
-4. @AfterMethod => This is the method that executed AFTER EVERY TEST CASE
+5. @AfterMethod => This is the method that executed AFTER EVERY TEST CASE
+6. @DataProvider => Used to pass data to the test case in the form of 2D Array
+7. @Parameters => Used to get parameters from XML File
 
 
 BeforeTest
@@ -268,20 +271,60 @@ BeforeTest
 AfterTest
 
 
+===============================
+Data Driven Testing
+===============================
+Executing single test case with multiple data set
+
+1. Array
+2. XML file
+3. Excel File
 
 
+=============================
+
+Open Amazon
+Print title
+Click on Sell
+Print title
+
+Open Amazon
+Print title
+Click on Best Sellers
+Print title
+
+Open Amazon
+Print title
+Click on Mobile
+Print title
+
+Open Amazon
+Print title
+Click on Electronics
+Print title
 
 
+=========================
+Modular Framework
+=========================
+- Execute / Skip Single / Multiple Tests
+- Execute tests via XML file
 
 
+Points to be notes about XML File
+1. All the tags are pre-defined
+2. All the tags and values are case sencetive
+3. You cannot alter the sequence of tags
 
 
+========================
+Assertion
+========================
+Way to mark test case as pass or fail
 
-
-
-
-
-
+Types
+1. 
+2. 
 
 
 

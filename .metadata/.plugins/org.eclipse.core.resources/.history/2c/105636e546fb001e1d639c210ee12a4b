@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "My Sutite">
+	<test name = "My Test">
+		<parametes>
+			<parameter name = "userName" value = "student"></parameter>
+			<parameter name = "password" value = "Password123"></parameter>
+		</parametes>
+		<classes>
+			<class name = "com.TestNGDemos.">
+			</class>
+		</classes>
+	</test>
+</suite>

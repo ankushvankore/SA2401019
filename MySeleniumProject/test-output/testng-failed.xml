@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGDemos.D03Before_After_Test">
+      <class name="com.TestNGDemos.D07Parameterization">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="openMyntra"/>
-          <include name="openAmazon"/>
-          <include name="openAjio"/>
-          <include name="openFlipkart"/>
-          <include name="openBrowser"/>
+          <include name="login"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.TestNGDemos.D03Before_After_Test -->
+      </class> <!-- com.TestNGDemos.D07Parameterization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

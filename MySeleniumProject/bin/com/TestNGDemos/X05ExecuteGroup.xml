@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "My Sutite">
+	<test name = "My Test">
+		<classes>
+			<class name = "com.TestNGDemos.D06AmazonTest">
+			</class>
+		</classes>
+		<groups>
+			<run>
+				<include name = "Gadgets"></include>
+			</run>
+		</groups>
+	</test>
+</suite>

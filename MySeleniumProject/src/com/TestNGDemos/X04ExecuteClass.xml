@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "My suite">
+	<test name = "My Test">
+		<classes>
+			<class name = "com.TestNGDemos.D06AmazonTest">
+			</class>
+			<class name = "com.TestNGDemos.D05DataProviderDemo">
+			</class>
+		</classes>
+	</test>
+</suite>
