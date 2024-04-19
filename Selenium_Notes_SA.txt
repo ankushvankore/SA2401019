@@ -377,7 +377,8 @@ Steps for Creating Cucumber project
 17. Copy the code from console
 18. Create package with name com.StepDef
 19. Create a normal class (without main) in this package. Try to match the name with feature file
-20. 
+20. Create package with name com.Runner
+19. Create a normal class (without main) in this package. Try to match the name with feature file
 
 
 =================================
