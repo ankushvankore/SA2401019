@@ -327,6 +327,116 @@ Types
 2. 
 
 
+==========================
+BDD
+==========================
+Behavior Driven Development
+
+Cucumber
+
+Component of Cucumber
+
+1. Feature File
+	- Gherkin Language / Syntax (English language)
+	- Contains keywords
+	- Contains Scenarios
+	
+2. Glue Code / Step Def
+	- Normal class
+	- Contains logic / script for your test case
+	- Skaleton
+	- Cucumber Annotations
+
+3. Runner class
+	- Normal class
+	- JUnit annotations
+	- Used to execute the script
+
+Steps for Creating Cucumber project
+1. File -> New -> Project -> Maven Project
+2. Select Add Project to Working set (Checkbox) -> Next
+3. Type io.cucumber in Filter text box -> Select io.cucumber filter and click on next
+4. Type group id (Company name) & artifact id (Project Name) (Both should same) -> Next
+5. Wait for some time till project get created
+6. Delete readymade package inside src/test/java
+7. Open https://github.com/cucumber/cucumber-java-skeleton/commit/d7249b50c570816eba27ce94557e1de7e9b0f97
+8. Click on Expand all button
+9. Copy the code from line no 11 <properties> to line to 41 </dependencies>
+10. Open pom.xml file
+11. Select <properties> to </dependencies> (Line no 12 to line no 59) & delete it
+12. Paste the code which you have copied from above link
+13. Make following changes in pom.xml file
+	a. Java version to 11
+	b. Remove <cucumber.version>6.8.2</cucumber.version>
+	c. Remove
+		<maven.compiler.version>3.8.1</maven.compiler.version>
+	        <maven.surefire.version>2.22.2</maven.surefire.version>
+14. Save this file
+15. Right click on folder inside src/test/resources -> file -> give the name with extention .feature
+16. Create feature file and execute it
+17. Copy the code from console
+18. Create package with name com.StepDef
+19. Create a normal class (without main) in this package. Try to match the name with feature file
+20. 
+
+
+=================================
+Feature File
+=================================
+1. Feature: -> Requirement
+2. Scenario: -> Test condition
+3. Given -> Pre-requisite
+4. When -> Steps
+5. And/Or -> Used to combine multiple stepes
+6. Then -> Exepected Result
+7. Background: -> To avoid multiple Given statements
+8. Examples: -> Used to pass the data to test case
+9. Scenario Outline: -> Used in combination of Examples to implement DDF
+
+================================
+Check Title of Google
+================================
+1. Open google
+2. Read the title
+3. Check that title is Google
+=============================
+Feature: Check Google Title
+Scenario: To validate title of Google
+Given Open google
+When Read the title of page
+Then The title should be Google
+
+
+================================
+Search functionality on google
+================================
+1. Open Google
+2. Enter valid valid keyword to search
+3. Hit Enter
+4. Valid search result should display
+================================
+Feature: Google search functionality
+Scenario: Validate search functionality of google
+Given Open google page
+When Enter valid keyword in search box
+And Hit enter
+Then search result should display
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
