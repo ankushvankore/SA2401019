@@ -31,6 +31,8 @@ public class Demo {
 		for(int i = 1; i <= 10; i++)
 			range.sendKeys(Keys.RIGHT);
 		
+		System.out.println(range.getLocation().x);
+		
 	}
 
 }

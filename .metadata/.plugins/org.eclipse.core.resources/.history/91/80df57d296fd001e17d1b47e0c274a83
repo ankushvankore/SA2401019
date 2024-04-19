@@ -1,0 +1,39 @@
+package com.TestNGDemos;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.AfterTest;
+
+public class D11ReadFromExcel {
+	String fPath = "D:\\StarAgile\\Demos\\SA2401019\\LoginData.xlsx";
+	File file;
+	FileInputStream fis;
+	XSSFWorkbook wb;
+	XSSFSheet sheet;
+	XSSFRow row;
+	XSSFCell cell;
+	
+	@Test
+	public void f() {
+	}
+
+	@BeforeTest
+	public void beforeTest() {
+		file = new File(fPath);
+		fis = new FileInputStream(file);
+		wb = new 
+	}
+
+	@AfterTest
+	public void afterTest() {
+	}
+
+}

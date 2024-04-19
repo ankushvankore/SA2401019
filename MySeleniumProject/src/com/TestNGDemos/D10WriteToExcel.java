@@ -25,10 +25,27 @@ public class D10WriteToExcel {
 	
 	@Test
 	public void writeDataToExcel() {
+		
+		/*for(int i = 0; i < 3; i++)
+		{
+			row = sheet.createRow(i);
+			for(int j = 0; j < 2; j++)
+			{
+				cell = row.createCell(j);
+				cell.setCellValue("Aparna");
+			}
+				
+		}*/
+		
 		row = sheet.createRow(0);			//Create 1st Row
 		cell = row.createCell(0);			//Create 1st Cell in 1st Row
 		
 		cell.setCellValue("Chetan");
+		
+		//row = sheet.createRow(0);
+		cell = row.createCell(1);
+		
+		cell.setCellValue("Andhale");
 	}
 
 	@BeforeTest
