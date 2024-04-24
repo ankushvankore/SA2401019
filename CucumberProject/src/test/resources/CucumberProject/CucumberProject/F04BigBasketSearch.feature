@@ -9,6 +9,6 @@ Given Open "https://www.bigbasket.com/"
     Then Search for Mango should display
 
   Scenario: Test search mashroom functionality on BigBasket
-    When search for "Mashroom"
+    When search for "Mushroom"
     And hit Enter
     Then Search for mashroom should display

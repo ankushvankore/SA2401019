@@ -1,4 +1,0 @@
-url=https://www.netflix.com/login
-emailTxtBoxID=:r0:
-passwordTxtBoxName=password
-submitBtnXPath=//*[@id="appMountPoint"]/div/div/div[2]/div/form/button[1]

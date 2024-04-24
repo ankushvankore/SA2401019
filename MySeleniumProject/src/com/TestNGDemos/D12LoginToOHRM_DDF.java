@@ -9,7 +9,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.apache.poi.hssf.util.HSSFColor.HSSFColorPredefined;
 import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
+import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -30,6 +33,8 @@ public class D12LoginToOHRM_DDF {
 	XSSFSheet sheet;
 	XSSFRow row;
 	XSSFCell cell;
+	XSSFCellStyle style;
+	XSSFFont font;
 	int totalRows, totalCells, i, j, index = 0;
 	WebDriver driver;
 	String expUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index", actUrl;
@@ -46,6 +51,9 @@ public class D12LoginToOHRM_DDF {
 
 	@AfterMethod
 	public void afterMethod() {
+		style = wb.createCellStyle();
+		font = wb.createFont();
+		
 		row = sheet.getRow(index);
 		cell = row.getCell(2);
 		
@@ -53,11 +61,23 @@ public class D12LoginToOHRM_DDF {
 			driver.findElement(By.xpath("//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']")).click();
 			driver.findElement(By.partialLinkText("Log")).click();
 			System.out.println("Test Case Pass");
+			
+			font.setBold(true);
+			font.setColor(HSSFColorPredefined.GREEN.getIndex());
+			style.setFont(font);
+			cell.setCellStyle(style);
+			
 			cell.setCellValue("Pass");
 		}
 		else
 		{
 			System.out.println(driver.findElement(By.xpath("//p[@class='oxd-text oxd-text--p oxd-alert-content-text']")).getText());
+			
+			font.setItalic(true);
+			font.setColor(HSSFColorPredefined.RED.getIndex());
+			style.setFont(font);
+			cell.setCellStyle(style);
+			
 			cell.setCellValue("Fail");
 		}
 		index++;

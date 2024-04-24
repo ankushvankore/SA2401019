@@ -1,4 +1,0 @@
-url=https://github.com/ankushvankore/SA2401019
-emailTxtBoxID=:r0:
-passwordTxtBoxName=password
-submitBtnXPath=//*[@id="appMountPoint"]/div/div/div[2]/div/form/button[1]

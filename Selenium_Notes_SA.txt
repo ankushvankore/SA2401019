@@ -423,10 +423,22 @@ When Enter valid keyword in search box
 And Hit enter
 Then search result should display
 
+=================================
+Tags in Cucumber
+=================================
+Desinged for execution or skiping any scenario
+
+Every tag should start with @
 
 
 
+================================
+Hooks
+================================
+@Before
+@After
 
+HOOKS ARE NEVER THE PART OF FEATURE 
 
 
 

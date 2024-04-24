@@ -34,4 +34,20 @@ public class S04BigBasketSearch {
 		System.out.println(driver.getTitle());
 		Assert.assertTrue(driver.getCurrentUrl().contains("mango"));
 	}
+	
+	
+	@When("search for {string}")
+	public void search_for(String product) {
+		driver.findElement(By.xpath("//*[@id=\"siteLayout\"]/header[2]/div[1]/div[1]/div/div/div/div/input")).sendKeys(product);
+	}
+
+	@When("hit Enter")
+	public void hit_enter() {
+		driver.findElement(By.xpath("//*[@id=\"siteLayout\"]/header[2]/div[1]/div[1]/div/div/div/div/input")).sendKeys(Keys.ENTER);	
+	}
+
+	@Then("Search for mashroom should display")
+	public void search_for_mashroom_should_display() {
+		Assert.assertTrue(driver.getCurrentUrl().contains("Mushroom"));;
+	}
 }
